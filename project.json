@@ -1,0 +1,21 @@
+{
+  "dataset_path": "/home/randy/datasets/arch/7_classes",
+  "telegram": {
+    "token": "6093110243:AAG7exuztieGIJz52L-JDX2wV14TdcxZsbk",
+    "id": "171023112",
+    "enabled": true
+  },
+  "test": {
+    "mlflow": {
+      "enabled": true
+    },
+    "prediction": {
+      "path": "/nas.dbms/randy/projects/archeological_classification/experiments/src_randy/outputs/predictions",
+      "enabled": false
+    },
+    "confusion_matrix": {
+      "path": "/nas.dbms/randy/projects/archeological_classification/experiments/src_randy/outputs/confusion-matrix",
+      "enabled": false
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "datasets": {
+    "train": {
+      "num_folds": 10,
+      "val_fold": 1,
+      "duplicate_aug": [],
+      "aug": [
+        {
+          "method": "GaussianBlur",
+          "params": {
+            "blur_limit": [3, 3],
+            "p": 1
+          }
+        },
+        {
+          "method": "SmallestMaxSize",
+          "params": {
+            "max_size": 400,
+            "p": 1
+          }
+        },
+        {
+          "method": "CenterCrop",
+          "params": {
+            "height": 400,
+            "width": 400,
+            "p": 1
+          }
+        },
+        {
+          "method": "Normalize",
+          "params": {
+            "p": 1,
+            "mean": 0.5136291096046832,
+            "std": 0.1238436176295692
+          }
+        }
+      ]
+    },
+    "test": {
+      "aug": [
+        {
+          "method": "GaussianBlur",
+          "params": {
+            "blur_limit": [3, 3],
+            "p": 1
+          }
+        },
+        {
+          "method": "SmallestMaxSize",
+          "params": {
+            "max_size": 400,
+            "p": 1
+          }
+        },
+        {
+          "method": "CenterCrop",
+          "params": {
+            "height": 400,
+            "width": 400,
+            "p": 1
+          }
+        },
+        {
+          "method": "Normalize",
+          "params": {
+            "p": 1,
+            "mean": 0.5136291096046832,
+            "std": 0.1238436176295692
+          }
+        }
+      ]
+    }
+  },
+  "model": {
+    "id": "blur-3-H-LR1",
+    "type": "convnext-base",
+    "dir": "../N-models/blur-3",
+    "size": [400, 400],
+    "n_classes": 7,
+    "device": "cuda:0",
+    "cam_target_layer": "features"
+  },
+  "DataLoader": {
+    "batch_size": 12,
+    "num_workers": 11
+  },
+  "optimizer": {
+    "learning_rate": 0.0001,
+    "betas": [0.8, 0.99],
+    "epsilon": 0.001,
+    "weight_decay": 0.0001
+  },
+  "scheduler": {
+    "patience": 30,
+    "mode": "max"
+  },
+  "training": {
+    "epoch": 500
+  },
+  "experiment_name": "N-blur"
+}

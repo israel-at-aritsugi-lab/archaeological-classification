@@ -1,8 +1,8 @@
 {
   "dataset_path": "/home/randy/datasets/arch/7_classes",
   "telegram": {
-    "token": "6093110243:AAG7exuztieGIJz52L-JDX2wV14TdcxZsbk",
-    "id": "171023112",
+    "token": "",
+    "id": "",
     "enabled": true
   },
   "test": {

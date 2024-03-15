@@ -1,5 +1,5 @@
 # Archaeological Classification
-⚱️🏺📜⛏️🤠🔎🪨🗺️🦖
+# ⚱️🏺📜⛏️🤠🔎🪨🗺️🦖
 
 ## Create a Virtual Environment
 

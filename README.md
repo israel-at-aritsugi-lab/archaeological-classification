@@ -7,6 +7,12 @@ python3 -m venv ~/venv/archaeology
 source ~/venv/archaeology/bin/activate
 ```
 
+## Install Packages
+
+```shell
+pip install -r requirements.txt
+```
+
 ## Train
 
 ```shell

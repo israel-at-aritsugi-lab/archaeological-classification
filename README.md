@@ -43,4 +43,4 @@ The results will be saved in MLFlow. To open, run:
 mlflow ui
 ```
 
-then open `http://localhost:5000`.
+then open [`http://localhost:5000`](http://localhost:5000).
